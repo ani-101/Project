@@ -1,0 +1,67 @@
+#clockContainer {
+    position: relative;
+    margin: auto;
+    /* border: 2px solid red; */
+    height: 30vw;
+    width: 40vw;
+    background: url(clock.png) no-repeat;
+    border: 2px solid mediumaquamarine;
+    border-radius: 100px;
+    /* to cover the entire image use background-size */
+    background-size: 100%;
+}
+
+#hour,
+#minute,
+#second {
+    position: absolute;
+    /* background: black ; */
+    border-radius: 10px;
+    opacity: 0.8;
+    /* to rotate from bottom point */
+    transform-origin: bottom;
+}
+
+#hour {
+    background-color: red;
+    width: 1.7%;
+    height: 20%;
+    /* distance from top */
+    top: 29%;
+    /* distance from left */
+    left: 48.5%;
+    opacity: 0.8;
+    /* display: none; */
+}
+
+#minute {
+    background-color: yellow;
+    width: 1%;
+    height: 28%;
+    top: 20%;
+    left: 49.2%;
+    opacity: 0.8;
+    /* for setting hand's length , we hide other hand */
+    /* display: none; */
+}
+
+#second {
+    background-color: green;
+    width: 0.5%;
+    height: 36%;
+    top: 13%;
+    left: 49.3%;
+    /* display: none; */
+}
+
+#stand {
+
+    background: orange;
+    height: 3%;
+    width: 40%;
+    border-radius: 7px;
+    top: 100%;
+    position: absolute;
+    left: 30%;
+
+}

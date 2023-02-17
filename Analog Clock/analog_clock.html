@@ -1,0 +1,45 @@
+<!-- For hour hand rotation - 
+12 hour = 360 degree (for rotation)
+1 hr = 30 deg
+for h hour, rotation will be 30h deg
+
+rotation due to minute hand in hour rotation - 
+60 min = 30 deg (in terms of hours)
+1 min = 1/2 deg 
+for m min rotation will be m/2 deg
+
+thus, total rotation is (30h + m/2 )deg (second hand is negligible)
+
+For minute hand rotation - 
+60 min = 360 deg
+1 min = 6 deg
+
+for k min, rotation will be 6k deg (second hand is negligible)
+
+For second hand rotation - 
+60 s = 360 deg
+1 s = 6 deg
+
+for x sec, rotation will be 6x deg 
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog Clock</title>
+    <link rel="stylesheet" href="a_clock.css">
+    <script src="a_clock.js"></script>
+</head>
+<body>
+    <div id="clockContainer">
+        <div id="hour"></div>
+        <div id="minute"></div>
+        <div id="second"></div>
+        <div id="stand"></div>
+    </div>
+</body>
+</html>
