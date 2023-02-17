@@ -1,0 +1,154 @@
+/* import is used to paste directly in stylesheet */
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* taken from css mdn variable in google, so that to change color in inspect option */
+:root {
+    /* colour taken from flipkart website */
+    --main-bg-color: #286cf0;
+}
+
+footer {
+    /* background-color: black; */
+    /* type var in background-color */
+    background-color: var(--main-bg-color);
+    color: white;
+    height: 12vh;
+    font-family: 'Anek Telugu', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+
+    height: 10vh;
+    /* background-color: rgb(212, 237, 186); */
+    background-color: var(--main-bg-color);
+    border: 2px;
+    border-style: double;
+    /* border-color: red; */
+}
+
+nav {
+    /* this is done to make image and text align to each other */
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    /* align-items makes the text vertically center,so give height of nav bar; */
+    align-items: center;
+    height: 10vh;
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Anek Telugu', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+nav ul li a:hover {
+    /* color: rgba(255, 255, 255, 0.826); */
+    font-weight: bold;
+    /* font-weight: 300; */
+}
+
+nav ul li {
+    /* display: inline; */
+    list-style-type: none;
+    padding: 0 13px;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+
+    width: 123px;
+    padding: 0 25px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    width: 30vw;
+    height: 23px;
+    border-radius: 6px;
+    margin: 0 16px 0 43px;
+    padding: 0 12px;
+}
+
+.search button {
+    font-family: 'Anek Telugu', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+
+}
+
+.search button:hover {
+    font-weight: bold;
+}
+
+.contain {
+    /* calc is used to cover remaining view port of website, 58px is header's height and 12vh is footer height */
+    min-height: calc(100vh - 10vh - 12vh);
+}
+
+.slider {
+    /* display: flex;
+justify-content: center;*/
+    width: 52vw;
+    margin: 12px auto;
+}
+
+.slider img {
+    width: 52vw;
+}
+
+
+.card {
+    /* background-color: var(--main-bg-color); */
+    /* the below two steps are used for place the content in center instead of using flex */
+    max-width: 91vw;
+    margin: 37px auto;
+    font-family: 'Anek Telugu', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* if the image overflow or get leak then overflow hidden will hide that part, use overflow sroll to get them scrolled */
+    overflow: scroll;
+}
+
+.card-item {
+    /* inline-flex is used to fix the text below the image at center */
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.card h2 {
+    font-family: 'Anek Telugu', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
